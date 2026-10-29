@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Apunte Dominó JU — Assistance et politique de confidentialité</title>
+<meta name="description" content="Assistance, suggestions et politique de confidentialité de l'application Apunte Dominó JU, un marquoir pour les parties de dominos sur iPhone." />
+<style>
+  :root {
+    --bg: #f5f5f7;
+    --card: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --accent: #0a84ff;
+    --border: #e3e3e6;
+    --radius: 16px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --card: #1c1c1e;
+      --text: #f5f5f7;
+      --muted: #9a9aa0;
+      --accent: #0a84ff;
+      --border: #2c2c2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: saturate(180%) blur(20px);
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    border-bottom: 1px solid var(--border);
+  }
+  .bar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .brand { font-weight: 700; font-size: 17px; }
+  nav { margin-left: auto; display: flex; gap: 18px; font-size: 15px; }
+  nav a { color: var(--muted); }
+  nav a:hover { color: var(--accent); text-decoration: none; }
+  nav a.active { color: var(--accent); font-weight: 600; }
+
+  main { max-width: 820px; margin: 0 auto; padding: 32px 20px 80px; }
+
+  .hero { text-align: center; padding: 28px 0 8px; }
+  .hero h1 { font-size: clamp(28px, 6vw, 40px); letter-spacing: -0.02em; margin: 0 0 10px; }
+  .hero p { color: var(--muted); font-size: 18px; margin: 0 auto; max-width: 620px; }
+
+  section { margin-top: 44px; scroll-margin-top: 80px; }
+  h2 { font-size: clamp(22px, 4vw, 28px); letter-spacing: -0.01em; margin: 0 0 6px; display: flex; align-items: center; gap: 10px; }
+  h2 .ico { width: 26px; height: 26px; flex: 0 0 auto; color: var(--accent); }
+  .lead { color: var(--muted); margin: 0 0 18px; font-size: 17px; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin: 14px 0;
+  }
+  h3 { font-size: 17px; margin: 0 0 8px; }
+  h4 { font-size: 16px; margin: 18px 0 6px; }
+  p { margin: 0 0 10px; }
+  ul { margin: 0 0 10px; padding-left: 20px; }
+  li { margin: 4px 0; }
+  .muted { color: var(--muted); font-size: 14px; }
+
+  .contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .contact .ico { width: 20px; height: 20px; color: var(--accent); }
+
+  footer {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+    color: var(--muted);
+    font-size: 14px;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <span class="brand">Apunte Dominó JU</span>
+    <nav>
+      <a href="#inicio">Accueil</a>
+      <a href="#soporte">Assistance</a>
+      <a href="#privacidad">Confidentialité</a>
+      <a href="../" hreflang="es" title="Español">ES</a>
+      <a href="../en/" hreflang="en" title="English">EN</a>
+      <a href="./" class="active" hreflang="fr" title="Français">FR</a>
+      <a href="../pt/" hreflang="pt" title="Português">PT</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero" id="inicio">
+    <h1>Apunte Dominó JU</h1>
+    <p>Comptez les points de vos parties de dominos sur iPhone : deux équipes, manches annulables, historique et classement.</p>
+  </div>
+
+  <!-- ========================== ASSISTANCE =========================== -->
+  <section id="soporte">
+    <h2>Assistance</h2>
+    <p class="lead">Un problème ou une suggestion ? Vous trouverez ici les réponses aux questions les plus courantes et comment nous contacter.</p>
+
+    <div class="card">
+      <h3>Que puis-je faire avec Apunte Dominó JU ?</h3>
+      <ul>
+        <li>Compter les points de deux équipes pendant la partie.</li>
+        <li>Saisir le nom de chaque équipe au-dessus de son score.</li>
+        <li>Annuler une manche en la faisant glisser, et la rétablir si besoin.</li>
+        <li>Définir le nombre de points nécessaires pour gagner.</li>
+        <li>Consulter l'historique des parties terminées avec le détail de chaque manche.</li>
+        <li>Voir le classement : victoires, défaites et taux de victoire de chaque équipe, et comparer deux équipes entre elles.</li>
+        <li>Exporter vos données dans un fichier pour les transmettre à quelqu'un d'autre, et importer le fichier qu'on vous a envoyé.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Ai-je besoin d'un compte ?</h3>
+      <p>Non. L'application ne demande ni de créer un compte ni de se connecter. Toutes ses fonctions sont disponibles directement.</p>
+    </div>
+
+    <div class="card">
+      <h3>Où sont stockées mes données ?</h3>
+      <p>Les équipes, les points, l'historique et le classement sont enregistrés uniquement sur votre appareil. L'application n'utilise pas de serveur qui lui soit propre pour stocker ces informations.</p>
+    </div>
+
+    <div class="card">
+      <h3>Comment fonctionne le marquoir ?</h3>
+      <p>La partie se termine automatiquement quand une équipe atteint l'objectif de points. Si, en regardant les résultats, vous annulez un coup et que le total repasse sous l'objectif, la partie reprend. Les résultats sont archivés dans l'historique et le classement lorsque vous appuyez sur « Nouvelle partie ».</p>
+    </div>
+
+    <div class="card">
+      <h3>Que sont les annonces qui apparaissent ?</h3>
+      <p>Le bas du marquoir peut afficher des bannières d'information. Ces bannières sont téléchargées depuis un lien public et se mettent à jour toutes seules lorsque vous avez une connexion, sans avoir à mettre l'application à jour. Sans connexion, le dernier contenu enregistré est affiché.</p>
+    </div>
+
+    <div class="card">
+      <h3>Comment effacer toutes mes données ?</h3>
+      <p>Dans <strong>Réglages → Gestion des données</strong>, vous pouvez utiliser « Effacer toutes les données ». Cette action supprime l'historique des parties, les équipes et les classements enregistrés sur l'appareil. Vous pouvez aussi rétablir les réglages par défaut depuis cette même section.</p>
+    </div>
+
+    <div class="card">
+      <h3>Puis-je transférer mes données vers un autre téléphone ?</h3>
+      <p>Oui. Dans <strong>Réglages → Gestion des données</strong>, vous pouvez <strong>exporter</strong> un fichier avec votre historique, vos équipes et vos classements, puis l'envoyer par WhatsApp, par e-mail ou l'enregistrer dans Fichiers. L'autre personne n'a qu'à ouvrir <strong>Importer les données</strong> et choisir ce fichier.</p>
+      <p>Lors de l'importation, l'application vous prévient que le contenu du fichier <strong>remplace</strong> toutes les données enregistrées sur le téléphone ; il faut donc en tenir compte avant de confirmer.</p>
+    </div>
+
+    <div class="card">
+      <h3>Un problème ou une suggestion ?</h3>
+      <p>Si vous trouvez un bug, quelque chose qui ne fonctionne pas comme prévu, ou si vous voulez proposer une amélioration, écrivez-nous en indiquant ce qui s'est passé et, si possible, les étapes pour le reproduire. Cela nous aide à améliorer l'application.</p>
+    </div>
+
+    <h4>Contact pour l'assistance et les suggestions</h4>
+    <p>
+      <a class="contact" href="mailto:jeremybarias1835@gmail.com">
+        <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"/><path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"/></svg>
+        jeremybarias1835@gmail.com
+      </a>
+    </p>
+  </section>
+
+  <!-- ======================== CONFIDENTIALITÉ ======================== -->
+  <section id="privacidad">
+    <h2>
+      <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.5 1.875c-1.036 0-1.875.84-1.875 1.875v8.25a.75.75 0 0 1-1.5 0v-2.25a1.875 1.875 0 0 0-3.75 0v6.375a7.5 7.5 0 0 0 15 0V8.25a1.875 1.875 0 0 0-3.75 0v3.75a.75.75 0 0 1-1.5 0V3.75A1.875 1.875 0 0 0 10.5 1.875Z"/></svg>
+      Politique de confidentialité
+    </h2>
+    <p class="lead">Dernière mise à jour : 29 octobre 2026</p>
+
+    <div class="card">
+      <h3>1. Introduction</h3>
+      <p>Apunte Dominó JU est une application pour tenir le marquoir des parties de dominos. Nous respectons votre vie privée et l'avons conçue pour fonctionner avec un stockage sur votre propre appareil, sans compte et sans collecter de données personnelles.</p>
+    </div>
+
+    <div class="card">
+      <h3>2. Informations collectées par l'application</h3>
+      <p>Apunte Dominó JU ne collecte, ne transmet ni ne partage d'informations personnelles avec des serveurs qui lui soient propres. Nous n'utilisons ni comptes utilisateur, ni profils, ni analyse d'audience par des tiers, ni suivi publicitaire.</p>
+    </div>
+
+    <div class="card">
+      <h3>3. Informations que vous saisissez</h3>
+      <p>L'application enregistre sur votre appareil les informations que vous saisissez pour tenir le marquoir, notamment :</p>
+      <ul>
+        <li>Les noms des équipes.</li>
+        <li>Les points de chaque manche et les manches annulées.</li>
+        <li>L'objectif de points pour gagner.</li>
+        <li>L'historique des parties terminées et le classement des équipes.</li>
+      </ul>
+      <p>Ces informations sont stockées localement sur l'appareil. Si vous désinstallez l'application, ces données sont supprimées avec elle.</p>
+    </div>
+
+    <div class="card">
+      <h3>4. Exporter et importer vos données</h3>
+      <p>L'application peut créer un fichier de sauvegarde avec votre historique, vos équipes et vos classements, puis le relire ensuite. Ce fichier est généré sur votre propre appareil et c'est vous qui le partagez, via les options du système (e-mail, messagerie, Fichiers ou d'autres applications installées).</p>
+      <p>L'application n'envoie pas ce fichier à un serveur qui lui soit propre ni à des tiers de sa propre initiative : il n'est partagé que lorsque vous le décidez. Si vous l'envoyez à quelqu'un d'autre ou via un service externe, ce service traitera le fichier selon sa propre politique de confidentialité, et la personne qui le recevra pourra voir les noms des équipes et les résultats qu'il contient.</p>
+      <p>Lors de l'importation d'un fichier, son contenu remplace les données enregistrées sur l'appareil.</p>
+    </div>
+
+    <div class="card">
+      <h3>5. Annonces et bannières</h3>
+      <p>L'application peut afficher des bannières d'information sur l'écran du marquoir. Leur contenu est téléchargé depuis un lien public hébergé sur GitHub, de façon à pouvoir être mis à jour sans publier une nouvelle version de l'application.</p>
+      <p>Lors du téléchargement de ces bannières, votre appareil effectue une requête réseau vers ce service. L'application n'envoie à ce service aucune donnée personnelle ni information sur vos parties ; seul le fichier de contenu est demandé. L'hébergeur (GitHub) peut enregistrer des données techniques sur la connexion, comme l'adresse IP, selon ses propres politiques.</p>
+      <p>S'il n'y a pas de connexion à internet, l'application continue de fonctionner normalement et affiche le dernier contenu enregistré.</p>
+    </div>
+
+    <div class="card">
+      <h3>6. Services tiers</h3>
+      <p>Dans sa version actuelle, l'application n'inclut aucun SDK de publicité, d'analyse comportementale ou de suivi. Le seul service externe pouvant être utilisé est l'hébergement public du fichier de bannières décrit au point précédent.</p>
+      <p>L'application utilise en revanche des technologies Apple propres au système, comme le stockage local de l'appareil et l'ouverture de pages web dans le navigateur du système.</p>
+    </div>
+
+    <div class="card">
+      <h3>7. Suppression des données</h3>
+      <p>Depuis <strong>Réglages → Gestion des données</strong>, vous pouvez effacer tout l'historique, les équipes et les classements, ou rétablir les réglages par défaut. Vous pouvez également supprimer toutes les données en désinstallant l'application.</p>
+    </div>
+
+    <div class="card">
+      <h3>8. Sécurité</h3>
+      <p>Vos données sont stockées sur l'appareil. Nous vous recommandons de maintenir le système à jour et d'utiliser les mesures de sécurité disponibles sur iOS, comme le code d'accès, Face ID ou Touch ID.</p>
+    </div>
+
+    <div class="card">
+      <h3>9. Confidentialité des mineurs</h3>
+      <p>L'application n'a pas pour but de collecter délibérément des informations personnelles auprès de mineurs et ne demande ni de créer un compte ni de saisir des données personnelles pour être utilisée.</p>
+    </div>
+
+    <div class="card">
+      <h3>10. Modifications de cette politique</h3>
+      <p>Nous pouvons mettre à jour cette politique lorsque cela est nécessaire pour refléter des changements dans l'application ou dans ses pratiques de confidentialité. La date indiquée en haut de cette page sera modifiée lors de la publication d'une nouvelle version.</p>
+    </div>
+
+    <div class="card">
+      <h3>11. Contact</h3>
+      <p>Si vous avez des questions sur cette politique de confidentialité ou sur le fonctionnement de l'application, écrivez-nous à :</p>
+      <p>
+        <a class="contact" href="mailto:jeremybarias1835@gmail.com">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"/><path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"/></svg>
+          jeremybarias1835@gmail.com
+        </a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Apunte Dominó JU — Marquoir pour les parties de dominos. Questions : <a href="mailto:jeremybarias1835@gmail.com">jeremybarias1835@gmail.com</a>
+</footer>
+
+</body>
+</html>

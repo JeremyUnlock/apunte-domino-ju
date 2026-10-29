@@ -59,6 +59,7 @@
   nav { margin-left: auto; display: flex; gap: 18px; font-size: 15px; }
   nav a { color: var(--muted); }
   nav a:hover { color: var(--accent); text-decoration: none; }
+  nav a.active { color: var(--accent); font-weight: 600; }
 
   main { max-width: 820px; margin: 0 auto; padding: 32px 20px 80px; }
 
@@ -117,6 +118,10 @@
       <a href="#inicio">Inicio</a>
       <a href="#soporte">Soporte</a>
       <a href="#privacidad">Privacidad</a>
+      <a href="./" class="active" hreflang="es" title="Español">ES</a>
+      <a href="en/" hreflang="en" title="English">EN</a>
+      <a href="fr/" hreflang="fr" title="Français">FR</a>
+      <a href="pt/" hreflang="pt" title="Português">PT</a>
     </nav>
   </div>
 </header>
@@ -141,6 +146,7 @@
         <li>Definir cuántos tantos hacen falta para ganar.</li>
         <li>Ver el historial de partidas terminadas con el detalle de cada ronda.</li>
         <li>Consultar las clasificaciones: victorias, derrotas y tasa de victoria de cada equipo, y comparar dos equipos entre sí.</li>
+        <li>Exportar tus datos a un archivo para pasárselos a otra persona, e importar el archivo que te hayan mandado.</li>
       </ul>
     </div>
 
@@ -167,6 +173,12 @@
     <div class="card">
       <h3>¿Cómo borro todos mis datos?</h3>
       <p>En <strong>Ajustes → Gestión de datos</strong> puedes usar «Borrar todos los datos». Esa acción elimina el historial de partidas, los equipos y las clasificaciones guardadas en el dispositivo. También puedes restablecer los ajustes a sus valores predeterminados desde esa misma sección.</p>
+    </div>
+
+    <div class="card">
+      <h3>¿Puedo pasar mis datos a otro teléfono?</h3>
+      <p>Sí. En <strong>Ajustes → Gestión de datos</strong> puedes <strong>exportar</strong> un archivo con tu historial, tus equipos y tus clasificaciones, y enviarlo por WhatsApp, correo o guardarlo en Archivos. La otra persona solo tiene que abrir <strong>Importar datos</strong> y elegir ese archivo.</p>
+      <p>Al importar, la aplicación te avisa de que el contenido del archivo <strong>reemplaza</strong> todos los datos que hubiera guardados en el teléfono, así que conviene tenerlo en cuenta antes de confirmar.</p>
     </div>
 
     <div class="card">
@@ -214,40 +226,47 @@
     </div>
 
     <div class="card">
-      <h3>4. Anuncios y banners</h3>
+      <h3>4. Exportar e importar tus datos</h3>
+      <p>La aplicación puede crear un archivo de copia con tu historial, tus equipos y tus clasificaciones, y volver a leerlo después. Ese archivo se genera en tu propio dispositivo y lo compartes tú, usando las opciones del sistema (correo, mensajería, Archivos u otras aplicaciones que tengas instaladas).</p>
+      <p>La aplicación no envía ese archivo a ningún servidor propio ni a terceros por su cuenta: solo se comparte cuando tú lo decides. Si lo mandas a otra persona o por un servicio externo, ese servicio tratará el archivo según su propia política de privacidad, y quien lo reciba podrá ver los nombres de los equipos y los resultados que contenga.</p>
+      <p>Al importar un archivo, su contenido reemplaza los datos guardados en el dispositivo.</p>
+    </div>
+
+    <div class="card">
+      <h3>5. Anuncios y banners</h3>
       <p>La aplicación puede mostrar banners informativos en la pantalla del marcador. Su contenido se descarga desde un enlace público alojado en GitHub, de forma que puede actualizarse sin publicar una nueva versión de la aplicación.</p>
       <p>Al descargar esos banners, tu dispositivo realiza una solicitud de red a ese servicio. La aplicación no envía a ese servicio ningún dato personal ni la información de tus partidas; únicamente se solicita el archivo de contenido. El proveedor de alojamiento (GitHub) puede registrar datos técnicos de la conexión, como la dirección IP, según sus propias políticas.</p>
       <p>Si no hay conexión a internet, la aplicación sigue funcionando normalmente y muestra el último contenido guardado.</p>
     </div>
 
     <div class="card">
-      <h3>5. Servicios de terceros</h3>
+      <h3>6. Servicios de terceros</h3>
       <p>En su versión actual, la aplicación no incluye SDK de publicidad, de análisis de comportamiento ni de seguimiento. El único servicio externo que puede utilizarse es el alojamiento público del archivo de banners descrito en el punto anterior.</p>
       <p>La aplicación sí utiliza tecnologías de Apple propias del sistema, como el almacenamiento local del dispositivo y la apertura de páginas web en el navegador del sistema.</p>
     </div>
 
     <div class="card">
-      <h3>6. Eliminación de datos</h3>
+      <h3>7. Eliminación de datos</h3>
       <p>Desde <strong>Ajustes → Gestión de datos</strong> puedes borrar todo el historial, los equipos y las clasificaciones, o restablecer los ajustes a sus valores predeterminados. También puedes eliminar todos los datos desinstalando la aplicación.</p>
     </div>
 
     <div class="card">
-      <h3>7. Seguridad</h3>
+      <h3>8. Seguridad</h3>
       <p>Tus datos se guardan en el dispositivo. Te recomendamos mantener actualizado el sistema y usar las medidas de seguridad disponibles en iOS, como el código de acceso, Face ID o Touch ID.</p>
     </div>
 
     <div class="card">
-      <h3>8. Privacidad de menores</h3>
+      <h3>9. Privacidad de menores</h3>
       <p>La aplicación no está dirigida a recopilar deliberadamente información personal de menores y no requiere crear cuentas ni introducir datos personales para usarla.</p>
     </div>
 
     <div class="card">
-      <h3>9. Cambios a esta política</h3>
+      <h3>10. Cambios a esta política</h3>
       <p>Podemos actualizar esta política cuando sea necesario para reflejar cambios en la aplicación o en sus prácticas de privacidad. La fecha indicada al principio de esta página se modificará cuando se publique una nueva versión.</p>
     </div>
 
     <div class="card">
-      <h3>10. Contacto</h3>
+      <h3>11. Contacto</h3>
       <p>Si tienes preguntas sobre esta política de privacidad o sobre el funcionamiento de la aplicación, escríbenos a:</p>
       <p>
         <a class="contact" href="mailto:jeremybarias1835@gmail.com">

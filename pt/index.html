@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Apunte Dominó JU — Suporte e Política de privacidade</title>
+<meta name="description" content="Suporte, sugestões e política de privacidade do aplicativo Apunte Dominó JU, um placar para partidas de dominó no iPhone." />
+<style>
+  :root {
+    --bg: #f5f5f7;
+    --card: #ffffff;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --accent: #0a84ff;
+    --border: #e3e3e6;
+    --radius: 16px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e0e10;
+      --card: #1c1c1e;
+      --text: #f5f5f7;
+      --muted: #9a9aa0;
+      --accent: #0a84ff;
+      --border: #2c2c2e;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: saturate(180%) blur(20px);
+    background: color-mix(in srgb, var(--bg) 82%, transparent);
+    border-bottom: 1px solid var(--border);
+  }
+  .bar {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .brand { font-weight: 700; font-size: 17px; }
+  nav { margin-left: auto; display: flex; gap: 18px; font-size: 15px; }
+  nav a { color: var(--muted); }
+  nav a:hover { color: var(--accent); text-decoration: none; }
+  nav a.active { color: var(--accent); font-weight: 600; }
+
+  main { max-width: 820px; margin: 0 auto; padding: 32px 20px 80px; }
+
+  .hero { text-align: center; padding: 28px 0 8px; }
+  .hero h1 { font-size: clamp(28px, 6vw, 40px); letter-spacing: -0.02em; margin: 0 0 10px; }
+  .hero p { color: var(--muted); font-size: 18px; margin: 0 auto; max-width: 620px; }
+
+  section { margin-top: 44px; scroll-margin-top: 80px; }
+  h2 { font-size: clamp(22px, 4vw, 28px); letter-spacing: -0.01em; margin: 0 0 6px; display: flex; align-items: center; gap: 10px; }
+  h2 .ico { width: 26px; height: 26px; flex: 0 0 auto; color: var(--accent); }
+  .lead { color: var(--muted); margin: 0 0 18px; font-size: 17px; }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin: 14px 0;
+  }
+  h3 { font-size: 17px; margin: 0 0 8px; }
+  h4 { font-size: 16px; margin: 18px 0 6px; }
+  p { margin: 0 0 10px; }
+  ul { margin: 0 0 10px; padding-left: 20px; }
+  li { margin: 4px 0; }
+  .muted { color: var(--muted); font-size: 14px; }
+
+  .contact {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .contact .ico { width: 20px; height: 20px; color: var(--accent); }
+
+  footer {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 24px 20px 60px;
+    color: var(--muted);
+    font-size: 14px;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <span class="brand">Apunte Dominó JU</span>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#soporte">Suporte</a>
+      <a href="#privacidad">Privacidade</a>
+      <a href="../" hreflang="es" title="Español">ES</a>
+      <a href="../en/" hreflang="en" title="English">EN</a>
+      <a href="../fr/" hreflang="fr" title="Français">FR</a>
+      <a href="./" class="active" hreflang="pt" title="Português">PT</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero" id="inicio">
+    <h1>Apunte Dominó JU</h1>
+    <p>Anote os pontos das suas partidas de dominó no iPhone: duas equipes, rodadas anuláveis, histórico e classificações.</p>
+  </div>
+
+  <!-- ============================ SUPORTE ============================ -->
+  <section id="soporte">
+    <h2>Suporte</h2>
+    <p class="lead">Tem algum problema ou uma sugestão? Aqui você encontra respostas para o mais comum e como nos contatar.</p>
+
+    <div class="card">
+      <h3>O que posso fazer com o Apunte Dominó JU?</h3>
+      <ul>
+        <li>Anotar os pontos de duas equipes durante a partida.</li>
+        <li>Digitar o nome de cada equipe acima da sua pontuação.</li>
+        <li>Anular uma rodada deslizando-a e restaurá-la se for preciso.</li>
+        <li>Definir quantos pontos são necessários para vencer.</li>
+        <li>Ver o histórico das partidas terminadas com o detalhe de cada rodada.</li>
+        <li>Consultar as classificações: vitórias, derrotas e taxa de vitória de cada equipe, e comparar duas equipes entre si.</li>
+        <li>Exportar seus dados para um arquivo a fim de passá-los a outra pessoa, e importar o arquivo que lhe enviaram.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Preciso de uma conta?</h3>
+      <p>Não. O aplicativo não exige criar conta nem fazer login. Todas as suas funções estão disponíveis diretamente.</p>
+    </div>
+
+    <div class="card">
+      <h3>Onde ficam guardados os meus dados?</h3>
+      <p>As equipes, os pontos, o histórico e as classificações ficam guardados apenas no seu aparelho. O aplicativo não usa um servidor próprio para armazenar essas informações.</p>
+    </div>
+
+    <div class="card">
+      <h3>Como funciona o placar?</h3>
+      <p>A partida termina automaticamente quando uma equipe alcança a meta de pontos. Se, ao ver os resultados, você anular uma jogada e o total cair abaixo da meta, a partida é retomada. Os resultados são arquivados no histórico e nas classificações quando você toca em «Nova partida».</p>
+    </div>
+
+    <div class="card">
+      <h3>O que são os anúncios que aparecem?</h3>
+      <p>A parte inferior do placar pode mostrar banners informativos. Esses banners são baixados de um link público e se atualizam sozinhos quando você tem conexão, sem precisar atualizar o aplicativo. Se não houver conexão, é mostrado o último conteúdo guardado.</p>
+    </div>
+
+    <div class="card">
+      <h3>Como apago todos os meus dados?</h3>
+      <p>Em <strong>Configurações → Gerenciamento de dados</strong> você pode usar «Apagar todos os dados». Essa ação elimina o histórico de partidas, as equipes e as classificações guardadas no aparelho. Você também pode restaurar as configurações padrão nessa mesma seção.</p>
+    </div>
+
+    <div class="card">
+      <h3>Posso passar meus dados para outro telefone?</h3>
+      <p>Sim. Em <strong>Configurações → Gerenciamento de dados</strong> você pode <strong>exportar</strong> um arquivo com o seu histórico, as suas equipes e as suas classificações, e enviá-lo por WhatsApp, e-mail ou salvá-lo em Arquivos. A outra pessoa só precisa abrir <strong>Importar dados</strong> e escolher esse arquivo.</p>
+      <p>Ao importar, o aplicativo avisa que o conteúdo do arquivo <strong>substitui</strong> todos os dados guardados no telefone, por isso vale a pena ter isso em conta antes de confirmar.</p>
+    </div>
+
+    <div class="card">
+      <h3>Tem um problema ou uma sugestão?</h3>
+      <p>Se encontrar um erro, algo que não funciona como esperado, ou quiser propor uma melhoria, escreva para nós indicando o que aconteceu e, se possível, os passos para reproduzir. Isso nos ajuda a melhorar o aplicativo.</p>
+    </div>
+
+    <h4>Contato de suporte e sugestões</h4>
+    <p>
+      <a class="contact" href="mailto:jeremybarias1835@gmail.com">
+        <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"/><path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"/></svg>
+        jeremybarias1835@gmail.com
+      </a>
+    </p>
+  </section>
+
+  <!-- ========================== PRIVACIDADE ========================== -->
+  <section id="privacidad">
+    <h2>
+      <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.5 1.875c-1.036 0-1.875.84-1.875 1.875v8.25a.75.75 0 0 1-1.5 0v-2.25a1.875 1.875 0 0 0-3.75 0v6.375a7.5 7.5 0 0 0 15 0V8.25a1.875 1.875 0 0 0-3.75 0v3.75a.75.75 0 0 1-1.5 0V3.75A1.875 1.875 0 0 0 10.5 1.875Z"/></svg>
+      Política de privacidade
+    </h2>
+    <p class="lead">Última atualização: 29 de outubro de 2026</p>
+
+    <div class="card">
+      <h3>1. Introdução</h3>
+      <p>O Apunte Dominó JU é um aplicativo para anotar o placar de partidas de dominó. Respeitamos a sua privacidade e o projetamos para funcionar com armazenamento no seu próprio aparelho, sem contas e sem coletar dados pessoais.</p>
+    </div>
+
+    <div class="card">
+      <h3>2. Informações que o aplicativo coleta</h3>
+      <p>O Apunte Dominó JU não coleta, não transmite nem compartilha informações pessoais com servidores próprios. Não usamos contas de usuário, perfis, análises de terceiros nem rastreamento publicitário.</p>
+    </div>
+
+    <div class="card">
+      <h3>3. Informações que você insere</h3>
+      <p>O aplicativo guarda no seu aparelho as informações que você digita para manter o placar, como:</p>
+      <ul>
+        <li>Os nomes das equipes.</li>
+        <li>Os pontos de cada rodada e as rodadas anuladas.</li>
+        <li>A meta de pontos para vencer.</li>
+        <li>O histórico de partidas terminadas e as classificações das equipes.</li>
+      </ul>
+      <p>Essas informações ficam armazenadas localmente no aparelho. Se você desinstalar o aplicativo, esses dados são eliminados com ele.</p>
+    </div>
+
+    <div class="card">
+      <h3>4. Exportar e importar seus dados</h3>
+      <p>O aplicativo pode criar um arquivo de backup com o seu histórico, as suas equipes e as suas classificações, e voltar a lê-lo depois. Esse arquivo é gerado no seu próprio aparelho e é você quem o compartilha, usando as opções do sistema (e-mail, mensagens, Arquivos ou outros aplicativos instalados).</p>
+      <p>O aplicativo não envia esse arquivo para nenhum servidor próprio nem a terceiros por conta própria: ele só é compartilhado quando você decide. Se você o enviar a outra pessoa ou por um serviço externo, esse serviço tratará o arquivo conforme a sua própria política de privacidade, e quem o receber poderá ver os nomes das equipes e os resultados que ele contém.</p>
+      <p>Ao importar um arquivo, o seu conteúdo substitui os dados guardados no aparelho.</p>
+    </div>
+
+    <div class="card">
+      <h3>5. Anúncios e banners</h3>
+      <p>O aplicativo pode mostrar banners informativos na tela do placar. O seu conteúdo é baixado de um link público hospedado no GitHub, de modo que pode ser atualizado sem publicar uma nova versão do aplicativo.</p>
+      <p>Ao baixar esses banners, o seu aparelho faz uma requisição de rede a esse serviço. O aplicativo não envia a esse serviço nenhum dado pessoal nem informações das suas partidas; apenas é solicitado o arquivo de conteúdo. O provedor de hospedagem (GitHub) pode registrar dados técnicos da conexão, como o endereço IP, conforme as suas próprias políticas.</p>
+      <p>Se não houver conexão à internet, o aplicativo continua funcionando normalmente e mostra o último conteúdo guardado.</p>
+    </div>
+
+    <div class="card">
+      <h3>6. Serviços de terceiros</h3>
+      <p>Na sua versão atual, o aplicativo não inclui SDK de publicidade, de análise de comportamento nem de rastreamento. O único serviço externo que pode ser usado é a hospedagem pública do arquivo de banners descrita no ponto anterior.</p>
+      <p>O aplicativo usa, sim, tecnologias da Apple próprias do sistema, como o armazenamento local do aparelho e a abertura de páginas web no navegador do sistema.</p>
+    </div>
+
+    <div class="card">
+      <h3>7. Exclusão de dados</h3>
+      <p>Em <strong>Configurações → Gerenciamento de dados</strong> você pode apagar todo o histórico, as equipes e as classificações, ou restaurar as configurações padrão. Você também pode eliminar todos os dados desinstalando o aplicativo.</p>
+    </div>
+
+    <div class="card">
+      <h3>8. Segurança</h3>
+      <p>Os seus dados ficam guardados no aparelho. Recomendamos manter o sistema atualizado e usar as medidas de segurança disponíveis no iOS, como o código de acesso, o Face ID ou o Touch ID.</p>
+    </div>
+
+    <div class="card">
+      <h3>9. Privacidade de menores</h3>
+      <p>O aplicativo não tem como objetivo coletar deliberadamente informações pessoais de menores e não exige criar contas nem inserir dados pessoais para ser usado.</p>
+    </div>
+
+    <div class="card">
+      <h3>10. Alterações nesta política</h3>
+      <p>Podemos atualizar esta política quando for necessário para refletir mudanças no aplicativo ou nas suas práticas de privacidade. A data indicada no início desta página será alterada quando uma nova versão for publicada.</p>
+    </div>
+
+    <div class="card">
+      <h3>11. Contato</h3>
+      <p>Se tiver dúvidas sobre esta política de privacidade ou sobre o funcionamento do aplicativo, escreva para nós em:</p>
+      <p>
+        <a class="contact" href="mailto:jeremybarias1835@gmail.com">
+          <svg class="ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z"/><path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z"/></svg>
+          jeremybarias1835@gmail.com
+        </a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Apunte Dominó JU — Placar para partidas de dominó. Dúvidas: <a href="mailto:jeremybarias1835@gmail.com">jeremybarias1835@gmail.com</a>
+</footer>
+
+</body>
+</html>
